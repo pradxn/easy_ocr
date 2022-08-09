@@ -1,0 +1,9 @@
+# getting angles for estimation and analysis and checking
+    print("left elbow angle: ",left_elbow_angle)
+    print("right elbow angle: ",right_elbow_angle)
+    print("\n")
+    print("left shoulder angle: ",left_shoulder_angle)
+    print("right shoulder angle: ",right_shoulder_angle)
+    print("\n")
+    print("left knee angle: ",left_knee_angle)
+    print("right knee angle: ",right_knee_angle)

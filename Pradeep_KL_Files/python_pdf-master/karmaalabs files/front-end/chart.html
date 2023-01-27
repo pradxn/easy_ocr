@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head><b>Pie Chart</b>
+    <title>Data Visualiztion</title>
+    <link href="/Users/pradeep/Desktop/Files/vs code/front-end/chart.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&family=Nunito:ital,wght@1,200&display=swap');
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+head{
+    font-weight: 200;
+    padding: 10px 0px 0px 10px;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: calc(100vw - 40vw);
+    height: calc(100vh - 40vh);
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 0px 2.2px 1.6px black;
+}
+
+.center h2{
+    padding: 15px 0px 15px 15px;
+}
+
+.center h3{
+    text-align: left;
+    position: absolute;
+    bottom: 0%;
+    padding: 5px 0px 5px 5px;
+    padding: 1rem;
+    color: gray;
+    font-style: italic;
+}
+.center p{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    text-align: right;
+    color:grey;
+}
+
+.center span::after {
+    content: "";
+    display: inline;
+    width: 0.6 rem;
+    height: 0.6 rem;
+    border-radius: 50%;
+    font-weight: 750;
+    background: currentColor;
+    margin: 0 0.5 rem;
+}
+
+.pie {
+    background: radial-gradient(circle closest-side, transparent 100%, white 0), 
+    conic-gradient(
+        from 180deg, deeppink 0, deeppink 34.5%,
+        rosybrown 0, rosybrown 60.4%,
+        coral 0, coral 75.7%,
+        peachpuff 0, peachpuff 89.7%,
+        dodgerblue 0, dodgerblue 100%
+    );
+    min-height: 290px;
+    min-width: 200px;   
+}
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <h2>Covid Cases</h2>
+            <div class="pie"></div>
+            <p>
+                Maharashtra 70.8L <span style="color: deeppink;"></span><br>
+                Kerela 53.1L <span style="color:rosybrown;"></span><br>
+                Karnataka 31.2L <span style="color: coral;"></span><br>
+                Tamil Nadu 28.8L <span style="color: peachpuff;"></span><br>
+                Andhra Pradesh 20.9L <span style="color:dodgerblue;"></span><br>
+            </p>
+            <h3>India's covid cases till now</h3>
+        </div>
+    </div>
+</body>
+</html>

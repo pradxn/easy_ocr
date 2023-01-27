@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $("button").prop("disabled", true);
+        $("textarea").on("input", function() {
+            if ($(this).val().length > 0) {
+                $("button").prop("disabled", false);
+            } else {
+                $("button").prop("disabled", true);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+        <div class="card bg-light">
+            <div class="card-body text-right">
+                <textarea class="form-control"></textarea><br/>
+                <button class="btn btn-primary">Post</button>
+                <button>Update</button>
+                <button>Delete</button>
+                <button>Get</button>
+            </div>
+        </div>
+        <div class="root">
+            <script type="text/babel">
+                class App extends React.Component {
+  constructor(props) {
+    super(props);
+ 
+    this.state = {
+      text: '',
+      photoAdded: false,
+    };
+  }
+  
+  handleChange = (e) => {
+    this.setState({ text: e.target.value });
+  };
+
+  togglePhoto = () => {
+    this.setState((prevState) => ({ photoAdded: !prevState.photoAdded }));
+  }
+  
+  getRemainingChars = () => {
+    let chars = 280 - this.state.text.length;
+    if (this.state.photoAdded) chars = chars - 23;
+    return chars;
+  }
+  
+  renderOverflowAlert = () => {
+    if (this.getRemainingChars() < 0) {
+      const imageLength = this.state.photoAdded ? 23 : 0;
+      const beforeOverflowText = this.state.text.substring(
+        280 - imageLength - 10,
+        280 - imageLength,
+      );
+      const overflowText = this.state.text.substring(280 - imageLength);
+
+      return (
+        <div className="alert alert-warning text-left">
+          <strong>Oops! Too Long:</strong>
+          &nbsp; &#8230;
+          {beforeOverflowText}
+          <strong className="bg-danger text-light">{overflowText}</strong>
+        </div>
+      );
+    }
+    return '';
+  };
+
+  render() {
+    const isTweetButtonDisabled = this.state.text.length === 0 && !this.state.photoAdded;
+  
+    return (
+      <div className="card bg-light">
+        <div className="card-body text-right">
+          {this.renderOverflowAlert()}
+          <textarea className="form-control" onChange={this.handleChange}></textarea>
+          <br/>
+          <span>{this.getRemainingChars()}</span>
+          
+          <button className="btn btn-primary" disabled={isTweetButtonDisabled}>Tweet</button>
+          
+          <button className="btn btn-secondary" onClick={this.togglePhoto}>
+            {this.state.photoAdded ? "✓ Photo Added" : "Add Photo" }
+          </button>
+        </div>
+      </div>
+    );
+  }
+};
+
+ReactDOM.render(
+  <App />,
+  document.getElementById("container")
+);
+            </script>
+        </div>
+</body>
+</html>

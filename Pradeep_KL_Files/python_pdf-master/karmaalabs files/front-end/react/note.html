@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        .note{
+            width: 550px;
+            height: 550px;
+            background-color: darkseagreen;
+            border: 1px solid black;
+            padding: 15px;
+            box-shadow: 2px 2px 12px black;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class Note extends React.Component{
+
+        constructor(props){
+          super(props);
+          this.state = {get: false}
+        }
+
+        fetch=()=>{
+          this.setState = ({get: true})
+        }
+
+        save=()=>{
+          this.setState = ({get: false})
+        }
+
+        renderForm=()=>{
+          return
+          <div class="note">
+            <textarea></textarea>
+          <button onClick={this.save}>Post</button></div>
+        }
+
+        renderDisplay=()=>{
+          return(
+                  <div className='note'>
+                      <button>Get</button>
+                      <button onClick={this.fetch}>Update</button>
+                      <button>Post</button>
+                      <button onClick={this.deleting}>Delete</button>
+                  </div>
+              )
+        }
+
+        deleting(){
+          alert('text will be deleted')
+        }
+          render() {
+              if(this.state.fetch){
+                return this.renderForm()
+              }else{
+                return this.renderDisplay()
+              }
+          }
+      }
+      ReactDOM.render(<Note />, document.getElementById('root'))
+    </script>
+  </body>
+</html>

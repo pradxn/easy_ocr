@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $("document").ready(function (){
+            $("body").append("<h3><br>Hello World!<br></h3>");
+            $("h2").css("border", "2px dotted red"); //adding border
+
+            //add content dynamically
+            var text = $("<p>");
+            text.append("Donec felis dolor, consectetur in dignissim ac, vulputate ut tortor. Duis porttitor ullamcorper placerat. Praesent sagittis, diam in efficitur sodales, enim nulla posuere ligula, eget lobortis nibh massa ac mauris. Vivamus eu velit ac justo porta laoreet. Curabitur blandit est ut dui tempus, non dapibus ex maximus. Phasellus in velit vitae dolor pulvinar convallis eu ut lacus. Integer quis diam bibendum, facilisis velit non, molestie metus. Ut in ligula sit amet nibh ultrices scelerisque.<br> (replaced text)");
+            $("#side").html(text);
+
+            //eventhandling
+            $("#textbox").on("click", click);
+            $("#textbox").on("mouseleave", leave);
+
+            function click(){
+                $("#textbox").html("<h1>You clicked</h1>");
+            }
+
+            function leave(){
+                $("#textbox").html("<h1>You are leaving</h1>");
+            }
+
+            //hover effects for hiding or showing
+            $("#show").on("click", function(){
+                $("#textbox").show();
+            });
+
+            $("#hide").on("click", function(){
+                $("#textbox").hide();
+            });
+
+            $(".text").hover("highlighttext");
+            function highlighttext(){
+                $(this).toggleClass("highlight");
+            }
+        });
+
+    </script>
+
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+            background-color: paleturquoise;
+        }
+        
+        h3{
+            float: right;
+        }
+        #side{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-color: beige;
+            float: left;
+            text-align: center;
+        }
+
+        #textbox{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-color: pink;
+            display: none;
+            float: left;
+            text-align: center;
+            text-shadow: 2px 2px red;
+        }
+
+        #faded{
+            display: none;
+        }
+
+        .highlight{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="show">Click to show</a> | <a href="#" id="hide">Click to hide</a>
+    
+    <h2>box is added using jquery</h2>
+    
+    
+    <div id="side">
+        Lorem ipsum
+    </div>
+    <div id="textbox">
+        click to view event
+    </div>
+    </div>
+    </div>
+</body>
+</html>

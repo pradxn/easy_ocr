@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#head").append("<h1><i>Hello World</i></h1>");
+            $("#b1").click(function(){
+                $("#slideText").animate({left: '250px'});
+            });
+            $("button").click(function(){
+                $("div").animate({left: '250px',opacity: '0.5',height: '150px',width: '150px'});
+            });
+        });
+    </script>
+
+    <style>
+        *{
+            margin: 4px;
+            padding: 2px;
+            margin-right: 5px;
+            background-color:lavender;
+        }
+
+        #head{
+            border: 1px solid black;
+            width: 1400px;
+            height: 50px;
+            background-color: darksalmon;
+        }
+
+        h1{
+            text-align:center;
+            color:black;
+            text-shadow: 2px 2px yellow;
+        }
+
+        #side{
+            width: 150px;
+            height: 750px;
+            border: 1px solid black;
+            background-color:whitesmoke;
+            float: left;
+            text-align: left;
+        }
+
+        #text{
+            width: 1234px;
+            height: 750px;
+            border: 1px solid black;
+            background-color: aliceblue;
+            float: left;
+            text-align: left;
+        }
+
+        #slideText{
+            width: 100px;
+            height: 100px;
+            background-color:goldenrod;
+            position: absolute;
+        }
+
+        #opaque{
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+            position: absolute;
+        }
+
+        body{
+            min-height: 100vh;
+        }
+        
+        footer{
+            border: 1px solid black;
+            width: 1400px;
+            height: 50px;
+            background-color: darksalmon;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="head"><!--add hello world--></div>
+    
+    <div id="side">
+        <button id="b1">Slide</button>
+        <button id="b2">Opaque</button><!--add side menu
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>--></div>
+    
+    <div id="text">
+        <div id="slideText"></div>
+        <div id="opaque"></div>
+    </div>
+    
+    <!--<footer class="foot">
+        <div id="foot">add copyrights and credits</div></footer>-->
+    
+</body>
+</html>

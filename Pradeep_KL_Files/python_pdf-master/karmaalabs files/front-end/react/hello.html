@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+    <div id='roots'>
+        <script type="text/babel">
+            class App extends React.Component{
+                render() {
+                    return <div>
+                        <h1>{this.props.text}</h1>
+                        <p>{this.props.children}</p>
+                        </div>
+                }
+            }
+            ReactDOM.render(<div><App text="Hello, World!">Text-1</App><App text="Multiple props">Text-2</App><App text="Test data">Text-3</App></div>, document.getElementById('roots') )
+        </script>
+    </div>
+</body>
+</html>

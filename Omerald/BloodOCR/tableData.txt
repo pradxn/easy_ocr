@@ -1,0 +1,196 @@
+Data from analyzeDocResponse.json:
+
+{'table_6b14254b74464cde8354dc22e0f17d39': 
+[['Patient Name :', 'Mrs.KAVITHA R'], 
+['Age/Gender :', '49 DYOMODA'], 
+['UHID/MR No :', 'DMKG.0000001921'], 
+['Visit ID :', 'DMKGOPV3613'], 
+['Ref Doctor :', 'Dr.SELF'], 
+['IP/OP NO :', ' ']], 
+
+'table_e7cc2b01971543608df2cfca571f7fd0': 
+[['Collected :', '07/May/2021 01:20PM'], 
+['Received :', '07/May/2021 04:02PM'], 
+['Reported :', '07/May/2021 05:09PM'], 
+['Status :', 'Final Report'], 
+['Client Name :', 'PCC MALKAJGIRI HYDERABAD'], 
+['Patient location :', 'Malkajgiri,Hyderabad']], 
+
+'table_6515ee0fcf25499a9d95b185fc0d5d1f': 
+[[' ', 'DEPARTMENT OF', 'HAEMATOLOGY', ' ', ' '], 
+['Test Name', 'Result', 'Unit', 'Bio. Ref. Range', 'Method'], 
+[' ', ' ', ' ', ' ', ' '], 
+['COMPLETE BLOOD COUNT (CBC) , WHOLE', 'BLOOD-EDTA', ' ', ' ', ' '], 
+['HAEMOGLOBIN', '12.2', 'g/dL', '12-15', 'Spectrophotometer'], 
+['PCV', '37.70', '%', '36-46', 'Electronic pulse & Calculation'], 
+['RBC COUNT', '4.31', 'Million/cu.mm', '3.8-4.8', 'Electrical Impedence'], 
+['MCV', '87', 'fL', '83-101', 'Calculated'], 
+['MCH', '28.4', 'pg', '27-32', 'Calculated'], 
+['MCHC', '32,5', 'g/dL', '31.5-34.5', 'Calculated'], 
+['R.D.W', '14.2', '%', '11.6-14', 'Calculated'], 
+['TOTAL LEUCOCYTE COUNT (TLC)', '4,000', 'cells/cu.mm', '4000-10000', 'Electrical Impedance'], 
+['DIFFERENTIAL LEUCOCYTIC COUNT', '(DLC)', ' ', ' ', ' '], 
+['NEUTROPHILS', '57.3', '%', '40-80', 'Electrical Impedance'], 
+['LYMPHOCYTES', '30.2', '%', '20-40', 'Electrical Impedance'], 
+['EOSINOPHILS', '3.5', '%', '1-6', 'Electrical Impedance'], 
+['MONOCYTES', '7.4', '%', '2-10', 'Electrical Impedance'], 
+['BASOPHILS', '1.6', '%', '<1-2', 'Electrical Impedance'], 
+['ABSOLUTE LEUCOCYTE COUNT', ' ', ' ', ' ', ' '], 
+['NEUTROPHILS', '2292', 'Cells/cu.mm', '2000-7000', 'Electrical Impedance'], 
+['LYMPHOCYTES', '1208', 'Cells/cu.mm', '1000-3000', 'Electrical Impedance'], 
+['EOSINOPHILS', '140', 'Cells/cu.mm', '20-500', 'Electrical Impedance'], 
+['MONOCYTES', '296', 'Cells/cu.mm', '200-1000', 'Electrical Impedance'], 
+['BASOPHILS', '64', 'Cells/cu.mm', '0-100', 'Electrical Impedance'], 
+['PLATELET COUNT', '244000', 'cells/cu.mm', '150000-410000', 'Electrical impedence']], 
+
+'table_b07b5ebe4ab346f7918dc769f4a5495a': 
+[['Patient Name :', 'Mrs.KAVITHA R'], 
+['Age/Gender :', '49 YOMOD/F'], 
+['UHID/MR No :', 'DMKG.0000001921'], 
+['Visit ID :', 'DMKGOPV3613'], 
+['Ref Doctor :', 'Dr.SELF'], 
+['IP/OP NO :', ' ']], 
+
+'table_caba6ff3b3da445c921d2d1474c77bd1': 
+[['Collected :', '07/May/2021 01:20PM'], 
+['Received :', '07/May/2021 04:26PM'], 
+['Reported :', '07/May/2021 06:11PM'], 
+['Status :', 'Final Report'], 
+['Client Name :', 'PCC MALKAJGIRI HYDERABAD'], 
+['Patient location :', 'Malkajgiri, ,Hyderabad']], 
+
+'table_f13910ec059845fea6aaa69a82ec7060': 
+[[' ', ' ', ' ', ' ', ' '], 
+['Test Name', 'Result', 'Unit', 'Bio. Ref. Range', 'Method'], 
+[' ', ' ', ' ', ' ', ' '], 
+['D-DIMER , CITRATE PLASMA', '333.44', 'ng/mL (FEU)', '<500', 'ELFA']], 
+
+'table_0da44797a45f407d92bf040df88eef86': 
+[['Patient Name :', 'Mrs.KAVITHA R'], 
+['Age/Gender :', '49 YOMOD /F'], 
+['UHID/MR No :', 'DMKG.0000001921'], 
+['Visit ID :', 'DMKGOPV3613'], 
+['Ref Doctor :', 'Dr.SELF'], 
+['IP/OP NO :', ' ']], 
+
+'table_4431049017a449848d8b67d09d2a6cdf': 
+[['Collected :', '07/May/2021 01:20PM'], 
+['Received :', '07/May/2021 04:03PM'], 
+['Reported :', '07/May/2021 06:40PM'], 
+['Status :', 'Final Report'], 
+['Client Name :', 'PCC MALKAJGIRI HYDERABAD'], 
+['Patient location :', 'Malkajgiri,Hyderabad']], 
+
+'table_905df0ae6a45439ca9b2e010b75fd444': 
+[[' ', 'DEPARTMENT OF', 'BIOCHEMISTRY', ' ', ' '], 
+['Test Name', 'Result', 'Unit', 'Bio. Ref. Range', 'Method'], 
+[' ', ' ', ' ', ' ', ' '], 
+['C-REACTIVE PROTEIN CRP (QUANTITATIVE) , SERUM', '18.605', 'mg/L', '<10.0', 'IMMUNOENZYMATIC']]}
+
+
+
+Data from analyzeDocResponse1.json:
+
+{'table_449a2032dce8433cb12860fe07ed659f': 
+[['Lab Code', 'CPC-AP-018'], 
+['Sample Drawn Date :', '2022-01-21 11:15'], 
+['Registration Date :', '2022-01-21 11:24'], 
+['Approved Date :', '2022-01-21 11:47']], 
+
+'table_241795ce4a4b44008f21936be91c0d65': 
+[['Sample ID :', '1077725 - Serum'], 
+['Patient ID :', ':468359'], 
+['Ref. Doctor :', ' '], 
+['Ref. Customer :', 'NANI LAB']], 
+
+'table_c4d89f467923437fa681345126d4a79e': 
+[['Test Description', 'Result', 'Units', 'Biological Reference Ranges'], 
+['C-Reactive Protein (CRP) (Method: Nephlometry)', '5.7', 'mg/L', '< 5.0']]}
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Patient Name :      |Mrs.KAVITHA R       
+Age/Gender :        |49 DYOMODA          
+UHID/MR No :        |DMKG.0000001921     
+Visit ID :          |DMKGOPV3613         
+Ref Doctor :        |Dr.SELF             
+IP/OP NO :          |                    
+
+
+Collected :         |07/May/2021 01:20PM 
+Received :          |07/May/2021 04:02PM 
+Reported :          |07/May/2021 05:09PM 
+Status :            |Final Report        
+Client Name :       |PCC MALKAJGIRI HYDERABAD
+Patient location :  |Malkajgiri,Hyderabad
+
+
+                    |DEPARTMENT OF       |HAEMATOLOGY         |                    
+Test Name           |Result              |Unit                |Bio. Ref. Range     
+                    |                    |                    |                    
+COMPLETE BLOOD COUNT (CBC) , WHOLE|BLOOD-EDTA          |                    |                    
+HAEMOGLOBIN         |12.2                |g/dL                |12-15               
+PCV                 |37.70               |%                   |36-46               
+RBC COUNT           |4.31                |Million/cu.mm       |3.8-4.8             
+MCV                 |87                  |fL                  |83-101              
+MCH                 |28.4                |pg                  |27-32               
+MCHC                |32,5                |g/dL                |31.5-34.5           
+R.D.W               |14.2                |%                   |11.6-14             
+TOTAL LEUCOCYTE COUNT (TLC)|4,000               |cells/cu.mm         |4000-10000          
+DIFFERENTIAL LEUCOCYTIC COUNT|(DLC)               |                    |                    
+NEUTROPHILS         |57.3                |%                   |40-80               
+LYMPHOCYTES         |30.2                |%                   |20-40               
+EOSINOPHILS         |3.5                 |%                   |1-6                 
+MONOCYTES           |7.4                 |%                   |2-10                
+BASOPHILS           |1.6                 |%                   |<1-2                
+ABSOLUTE LEUCOCYTE COUNT|                    |                    |                    
+NEUTROPHILS         |2292                |Cells/cu.mm         |2000-7000           
+LYMPHOCYTES         |1208                |Cells/cu.mm         |1000-3000           
+EOSINOPHILS         |140                 |Cells/cu.mm         |20-500              
+MONOCYTES           |296                 |Cells/cu.mm         |200-1000            
+BASOPHILS           |64                  |Cells/cu.mm         |0-100               
+PLATELET COUNT      |244000              |cells/cu.mm         |150000-410000       
+
+
+Patient Name :      |Mrs.KAVITHA R       
+Age/Gender :        |49 YOMOD/F          
+UHID/MR No :        |DMKG.0000001921     
+Visit ID :          |DMKGOPV3613         
+Ref Doctor :        |Dr.SELF             
+IP/OP NO :          |                    
+
+
+Collected :         |07/May/2021 01:20PM 
+Received :          |07/May/2021 04:26PM 
+Reported :          |07/May/2021 06:11PM 
+Status :            |Final Report        
+Client Name :       |PCC MALKAJGIRI HYDERABAD
+Patient location :  |Malkajgiri, ,Hyderabad
+
+
+                    |                    |                    |                    
+Test Name           |Result              |Unit                |Bio. Ref. Range     
+                    |                    |                    |                    
+D-DIMER , CITRATE PLASMA|333.44              |ng/mL (FEU)         |<500                
+
+
+Patient Name :      |Mrs.KAVITHA R       
+Age/Gender :        |49 YOMOD /F         
+UHID/MR No :        |DMKG.0000001921     
+Visit ID :          |DMKGOPV3613         
+Ref Doctor :        |Dr.SELF             
+IP/OP NO :          |                    
+
+
+Collected :         |07/May/2021 01:20PM 
+Received :          |07/May/2021 04:03PM 
+Reported :          |07/May/2021 06:40PM 
+Status :            |Final Report        
+Client Name :       |PCC MALKAJGIRI HYDERABAD
+Patient location :  |Malkajgiri,Hyderabad
+
+
+                    |DEPARTMENT OF       |BIOCHEMISTRY        |                    
+Test Name           |Result              |Unit                |Bio. Ref. Range     
+                    |                    |                    |                    
+C-REACTIVE PROTEIN CRP (QUANTITATIVE) , SERUM|18.605              |mg/L                |<10.0    

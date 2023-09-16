@@ -1,0 +1,96 @@
+.clients-section {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.heading {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    font-size: large;
+    text-align: center;
+    padding: 20px;
+}
+
+.clients-container {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.client {
+    flex: 0 0 calc(30% - 20px);
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.client:hover {
+    transform: translateY(-5px);
+}
+
+.client-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.client-reviews-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.client-review {
+    font-size: 1rem;
+    color: #777;
+    margin: 20px 0;
+}
+
+.client-name {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.client-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+    align-self: baseline;
+}
+
+.client-button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .clients-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client {
+        flex: 0 0 calc(100% - 40px);
+        margin: 10px;
+    }
+}

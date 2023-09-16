@@ -1,0 +1,9 @@
+data = [[[' ', 'DEPARTMENT OF', 'HAEMATOLOGY', ' ', ' '], ['Test Name', 'Result', 'Unit', 'Bio. Ref. Range', 'Method'], [' ', ' ', ' ', ' ', ' '], ['COMPLETE BLOOD COUNT (CBC) , WHOLE', 'BLOOD-EDTA', ' ', ' ', ' '], ['HAEMOGLOBIN', '12.2', 'g/dL', '12-15', 'Spectrophotometer'], ['PCV', '37.70', '%', '36-46', 'Electronic pulse & Calculation'], ['RBC COUNT', '4.31', 'Million/cu.mm', '3.8-4.8', 'Electrical Impedence'], ['MCV', '87', 'fL', '83-101', 'Calculated'], ['MCH', '28.4', 'pg', '27-32', 'Calculated'], ['MCHC', '32,5', 'g/dL', '31.5-34.5', 'Calculated'], ['R.D.W', '14.2', '%', '11.6-14', 'Calculated'], ['TOTAL LEUCOCYTE COUNT (TLC)', '4,000', 'cells/cu.mm', '4000-10000', 'Electrical Impedance'], ['DIFFERENTIAL LEUCOCYTIC COUNT', '(DLC)', ' ', ' ', ' '], ['NEUTROPHILS', '57.3', '%', '40-80', 'Electrical Impedance'], ['LYMPHOCYTES', '30.2', '%', '20-40', 'Electrical Impedance'], ['EOSINOPHILS', '3.5', '%', '1-6', 'Electrical Impedance'], ['MONOCYTES', '7.4', '%', '2-10', 'Electrical Impedance'], ['BASOPHILS', '1.6', '%', '<1-2', 'Electrical Impedance'], ['ABSOLUTE LEUCOCYTE COUNT', ' ', ' ', ' ', ' '], ['NEUTROPHILS', '2292', 'Cells/cu.mm', '2000-7000', 'Electrical Impedance'], ['LYMPHOCYTES', '1208', 'Cells/cu.mm', '1000-3000', 'Electrical Impedance'], ['EOSINOPHILS', '140', 'Cells/cu.mm', '20-500', 'Electrical Impedance'], ['MONOCYTES', '296', 'Cells/cu.mm', '200-1000', 'Electrical Impedance'], ['BASOPHILS', '64', 'Cells/cu.mm', '0-100', 'Electrical Impedance'], ['PLATELET COUNT', '244000', 'cells/cu.mm', '150000-410000', 'Electrical impedence']]]
+
+# prompt user for input
+search_term = input("Enter a search term: ")
+
+# loop through each row in data and check if search term is present
+for row in data[0]:
+    if search_term.lower() in ' '.join(row).lower():
+        print(row)

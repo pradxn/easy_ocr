@@ -1,0 +1,31 @@
+pip install flask pymongo uuid
+
+python -m venv env
+
+source env/bin/activate   # For Mac or Linux
+env\Scripts\activate     # For Windows
+
+************************************ app.py ************************************
+
+check these before running code:
+
+AWS_ACCESS_KEY_ID <AWS client>
+AWS_SECRET_ACCESS_KEYS <AWS client>
+CONNECTION STRING URL <MongoDB>
+
+1. POST method takes following input
+
+{
+    "image_url": "<image_url>",
+    "file_name": "<file_name>"
+}
+
+2. if success then displays
+
+{
+    "success": true
+}
+
+************************************ aws.py ************************************
+
+manual mock code that takes terminal input of file name
